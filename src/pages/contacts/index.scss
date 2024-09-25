@@ -1,0 +1,40 @@
+@import '../../blocks/header/header.scss';
+@import '../../blocks/header/header__logo-link.scss';
+@import '../../blocks/header/header__logo.scss';
+
+@import '../../blocks/card/card.scss';
+@import '../../blocks/card/card__image--contact-page.scss';
+@import '../../blocks/card/card__content--contact-page.scss';
+@import '../../blocks/card/card__text--description.scss';
+@import '../../blocks/card/card__text--additional.scss';
+@import '../../blocks/card/card__background--contact-page.scss';
+
+@import '../../blocks/button/button.scss';
+
+@import '../../blocks/form/form.scss';
+@import '../../blocks/form/form__input.scss';
+@import '../../blocks/form/form__submit.scss';
+@import '../../blocks/form/form__title.scss';
+
+.page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 15px;
+    height: 100vh;
+    margin: 0;
+
+    font-family: "Inter", system-ui;
+    font-optical-sizing: auto;
+    font-style: italic;
+
+    background-color: #E1E1E1;
+}
+
+.page--light-gray {
+    background-color: #EDEAE9;
+}
+
+.card--light-gray {
+    background-color: #C1C0BE;
+}
