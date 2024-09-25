@@ -1,0 +1,21 @@
+.form__input {
+    background-color: #F5F5F5;
+    border: none;
+    text-align: start;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px 0px; /* this */
+    margin-bottom: 7%;
+}
+
+.form__input::placeholder {
+    font-family: "Inter", system-ui;
+    font-optical-sizing: auto;
+    font-style: italic;
+    text-indent: 10px;
+    font-weight: 300;
+    font-size: 16px;
+}
