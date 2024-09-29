@@ -1,3 +1,14 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.form__submit {
+    margin-bottom: 15%;
+    margin-top: 5%;
+    align-self: flex-end;
+
+}
 .form__input {
     background-color: #F5F5F5;
     border: none;
@@ -18,4 +29,11 @@
     text-indent: 10px;
     font-weight: 300;
     font-size: 16px;
+}
+
+.form__title {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 7%;
 }
