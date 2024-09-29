@@ -22,18 +22,23 @@
     <div class="carousel">
       <div class="carousel__list">
         <div class="carousel__item card card__size--s">
-          <!-- <img src="../assets/work-1.jpg"> -->
+          <img src="../assets/work-1.jpg">
         </div>
         <div class="carousel__item card card__size--s">
-          <!-- <img src="../assets/work-2.jpg"> -->
+          <img src="../assets/work-2.jpg">
         </div>
         <div class="carousel__item card card__size--s">
-          <!-- <img src="../assets/work-3.jpg"> -->
+          <img src="../assets/work-3.jpg">
         </div>
-
-        <!-- <div class="carousel__item card card__size--s"></div>
-        <div class="carousel__item card card__size--s"></div>
-        <div class="carousel__item card card__size--s"></div> -->
+        <div class="carousel__item card card__size--s">
+          <img src="../assets/work-4.jpg">
+        </div>
+        <div class="carousel__item card card__size--s">
+          <img src="../assets/work-5.jpg">
+        </div>
+        <div class="carousel__item card card__size--s">
+          <img src="../assets/work-6.jpg">
+        </div>
       </div>
 
       <div class="carousel__controls">
@@ -44,10 +49,24 @@
           <img src="../assets/next.png" alt="Вперед" />
         </button>
       </div>
-
-      <p class="carousel__description">
-        Нажми на изображение, чтобы увидеть детали работы
-      </p>
     </div>
+    <p class="carousel-description">
+      Нажми на изображение, чтобы увидеть детали работы
+    </p>
+    <script>
+      const horizontScroll = document.querySelector('.carousel');
+      const next = document.querySelector('.carousel__button--next');
+      const prev = document.querySelector('.carousel__button--prev');
+
+      next.addEventListener('click', ()=> {
+        horizontScroll.style.scrollBehavior = 'smooth';
+        horizontScroll.scrollLeft += 1000;
+      });
+
+      prev.addEventListener('click', ()=> {
+        horizontScroll.style.scrollBehavior = 'smooth';
+        horizontScroll.scrollLeft -= 1000;
+      });
+    </script>
   </body>
 </html>
