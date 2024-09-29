@@ -46,6 +46,10 @@
     grid-column: 1 / -1;
     grid-row: 2 / -1;
     position: relative;
+    display: flex;
+    width: 1000px;
+    overflow-x: scroll;
+    margin: 0 auto;
 }
 
 .carousel__button {
@@ -61,9 +65,9 @@
 .carousel__controls {
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    bottom: 60%;
-    width: 95%;
+    position: fixed;
+    bottom: 50%;
+    width: 80%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -78,25 +82,37 @@
     background-color: #B4B4B4;
     border: 1px solid #000000;
     border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel__list {
     display: flex;
     justify-content: center;
-
 }
 
 .card__size--s {
-    width: 350px;
+    width: 300px;
     height: 400px;
 }
 
 .carousel__item img {
     width: 100%;
+    overflow: hidden;
     height: auto;
+    border-radius: 15px;
+    padding: 10px;
+
 }
 
-.carousel__description {
+.carousel-description {
     text-align: center;
-    margin-top: 50px;
+    grid-column: 1 / -1;
+    grid-row: 6 / -1;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
 }
