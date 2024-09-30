@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script type="module" defer src="../index.js"></script>
+    <title>Tatoo Artist Site</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +15,7 @@
   </head>
   <body class="page page--light-gray">
     <header class="header">
-      <a href="/" class="header__logo-link">
+      <a href="./main.html" class="header__logo-link">
         <img src="../assets/logo.png" alt="logo" class="header__logo" />
       </a>
     </header>
@@ -22,8 +23,8 @@
     <article class="card card--light-gray card__background--contact-page">
       <img src="../assets/card-img-contact-page.jpg" alt="Hi!" class="card__image--contact-page" />
 
-      <div class="card__content--contact-page">
-        <p class="card__text--description">
+      <div class="card-content--contact-page">
+        <p class="card-content--description">
           Доверь свою кожу профессионалу, и получи татуировку, которая станет
           частью твоего неповторимого образа
         </p>
@@ -38,10 +39,10 @@
             <input class="form__input" placeholder="Номер телефона" type="tel" name="tel" id="tel" required />
           </div>
           <div class="form__submit">
-            <input class="button" type="submit" value="Отправить" />
+            <input class="form__button" type="submit" value="Отправить" />
           </div>
         </form>
-        <p class="card__text--additional">Или пиши мне tg: @Toter_S</p>
+        <p class="card-content--additional">Или пиши мне tg: @Toter_S</p>
       </div>
     </article>
   </body>
