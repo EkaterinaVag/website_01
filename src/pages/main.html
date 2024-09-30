@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script type="module" defer src="../index.js"></script>
+    <title>Tatoo Artist Site</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,22 +15,22 @@
   </head>
   <body class="page">
     <header class="header">
-      <a href="/" class="header__logo-link">
+      <a href="./main.html" class="header__logo-link">
         <img src="../assets/logo.png" alt="logo" class="header__logo" />
       </a>
     </header>
 
     <article class="card">
-      <div class="card__content--main-page">
-        <h2 class="card__title">Привет! Меня зовут Семён!</h2>
-        <p class="card__text">
+      <div class="card-content">
+        <h2 class="card-content__title">Привет! Меня зовут Семён!</h2>
+        <p class="card-content__text">
           Я - художник, который влюблен в искусство татуировки. Каждая моя
           работа - это сочетание мастерства, креативности и любви к деталям.
         </p>
-        <a href="#" class="button card__button--view-works">
+        <a href="./portfolio.html" class="card-content__button--view-works">
           посмотреть работы
         </a>
-        <a href="./contasts.html" class="button card__button--book-session">
+        <a href="./contasts.html" class="card-content__button--book-session">
           записаться на сеанс
         </a>
       </div>
