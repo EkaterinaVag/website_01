@@ -1,0 +1,26 @@
+.page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 15px;
+    height: 100vh;
+    margin: 0;
+
+    font-family: "Inter", system-ui;
+    font-optical-sizing: auto;
+    font-style: italic;
+
+    background-color: #E1E1E1;
+
+    &--light-gray {
+        background-color: #EDEAE9;
+    }
+
+    &__background {
+        background-image: url("../assets/Vector.png");
+        background-size: 100% 18%;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+
+    }
+}
