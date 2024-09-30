@@ -1,0 +1,66 @@
+
+@import '../mixins.scss';
+
+.carousel {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    position: relative;
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        margin: 0px 15px;
+        @include card-base;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 400px;
+
+        img {
+            width: 100%;
+            overflow: hidden;
+            height: auto;
+            border-radius: 15px;
+            padding: 10px;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 50%;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+    
+            &:hover {
+                opacity: 0.5;
+            }
+        }  
+    }
+}
+
+.carousel-description {
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-row: 6 / -1;
+}
