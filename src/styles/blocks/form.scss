@@ -1,39 +1,47 @@
+@import '../mixins.scss';
+
 .form {
     display: flex;
     flex-direction: column;
     width: 70%;
-}
-.form__submit {
-    margin-bottom: 15%;
-    margin-top: 5%;
-    align-self: flex-end;
 
-}
-.form__input {
-    background-color: #F5F5F5;
-    border: none;
-    text-align: start;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 400;
-    border-radius: 5px;
-    width: 100%;
-    padding: 15px 0px; /* this */
-    margin-bottom: 7%;
-}
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 0px;
+        margin-bottom: 7%;
+    }
 
-.form__input::placeholder {
-    font-family: "Inter", system-ui;
-    font-optical-sizing: auto;
-    font-style: italic;
-    text-indent: 10px;
-    font-weight: 300;
-    font-size: 16px;
-}
+    &__input {
+        background-color: #F5F5F5;
+        border: none;
+        text-align: start;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        border-radius: 5px;
+        width: 100%;
+        padding: 15px 0px;
+        margin-bottom: 7%;
 
-.form__title {
-    font-weight: 500;
-    font-size: 16px;
-    margin-top: 0px;
-    margin-bottom: 7%;
+        &::placeholder {
+            font-family: "Inter", system-ui;
+            font-optical-sizing: auto;
+            font-style: italic;
+            text-indent: 10px;
+            font-weight: 300;
+            font-size: 16px;
+        }
+    }
+
+    &__submit {
+        margin-bottom: 15%;
+        margin-top: 5%;
+        align-self: flex-end;
+    }
+
+    &__button {
+        @include button-base(#F39850, #ffffff);
+        @include button-text(15px, 500);
+    }
 }

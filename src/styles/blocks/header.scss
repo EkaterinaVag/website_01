@@ -7,14 +7,16 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 15px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-}
-.header__logo {
-    width: 100%;
-    height: auto;
-}
-.header__logo-link {
-    grid-column: 1 / 3;
-    margin-left: 30%;
-    display: flex;
-    align-items: center;
+
+    &__logo {
+        width: 100%;
+        height: auto;
+    }
+
+    &__logo-link {
+        grid-column: 1 / 3;
+        margin-left: 30%;
+        display: flex;
+        align-items: center;
+    }
 }
