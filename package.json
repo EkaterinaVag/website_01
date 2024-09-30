@@ -1,0 +1,12 @@
+{
+  "name": "website_01",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/styles/styles.scss src/styles/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
