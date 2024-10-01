@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <script type="module" defer src="../index.js"></script>
     <title>Tatoo Artist Site</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +19,11 @@
     </header>
 
     <article class="card card--light-gray card__background--contact-page">
-      <img src="../assets/card-img-contact-page.jpg" alt="Hi!" class="card__image--contact-page" />
+      <img
+        src="../assets/card-img-contact-page.jpg"
+        alt="Hi!"
+        class="card__image--contact-page"
+      />
 
       <div class="card-content--contact-page">
         <p class="card-content--description">
@@ -32,11 +34,22 @@
           <h1 class="form__title">Оставь заявку на сеанс:</h1>
           <div>
             <label for="name" aria-label="Твоё имя:"></label>
-            <input class="form__input" placeholder="Твоё имя" type="text" name="name" id="name" required />
+            <input
+              class="form__input"
+              placeholder="Твоё имя"
+              type="text"
+              name="name"
+              id="name"
+              required
+            />
           </div>
           <div>
-            <label for="tel" aria-label="Номер телефона:"></label>
-            <input class="form__input" placeholder="Номер телефона" type="tel" name="tel" id="tel" required />
+            <select>
+              <option disabled>Выберите способ связи</option>
+              <option>По номеру телефона</option>
+              <option>Telegram</option>
+              <option>VKontakte</option>
+            </select>
           </div>
           <div class="form__submit">
             <input class="form__button" type="submit" value="Отправить" />
